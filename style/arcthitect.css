@@ -7,8 +7,15 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
-/* bottun style */
+/* button style */
 .btn-primary{
+    border-radius: 8px;
+    background-color: yellowgreen;
+    padding: 20px 25px;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 0;
 
 }
 /* header style */
@@ -21,9 +28,10 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center  ;
 }
 .nav-title{
-    font-size: 2.8rem;
+    font-size: 45px;
     font-weight: 700px;
     color: #131313;
 }
@@ -40,6 +48,11 @@ nav li{
 
 
 }
+nav li a{
+    text-decoration: none;
+    color: palevioletred ;
+}
+
 .banner{
 
 }
@@ -49,8 +62,8 @@ nav li{
     margin: 0 auto;
 }
 .banner-title{
-    font-size: 4rem;
-    font-weight: 700px;
+    font-size: 45px;
+    font-weight: 600px;
     color: Dark 03;
 }
 .banner-description{
@@ -78,7 +91,46 @@ nav li{
         flex-direction: column;
     }
     header{
-        padding: 20px;
+        padding: 50px;
     }
     
+}
+
+/* main style */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams style */
+.teams-container{
+    display:flex;
+    align-items: center;
+}
+   
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+.teams-title{
+    font-size: 45px;
+}
+.teams-title .Quick{
+    color: #424242;
+    font-weight: 700px;
+
+}
+.teams-container-description{
+
+}
+.teams-title .text-feature{
+    color: chocolate;
+    font-weight: 700px;
 }

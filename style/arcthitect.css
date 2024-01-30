@@ -9,7 +9,7 @@
 }
 /* bottun style */
 .btn-primary{
-    
+
 }
 /* header style */
 header{
@@ -56,6 +56,29 @@ nav li{
 .banner-description{
     color: #727272; ;
 }
-/* .banner-img{
-    padding: 50px 240px 45px 240px;
-} */
+.banner-img{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+/* responsive for small device  */
+
+@media screen and (max-width:576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* responsive  web for  medium device  */
+@media screen and(min-width:576px) and(max-width:992px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 20px;
+    }
+    
+}

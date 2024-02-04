@@ -71,7 +71,7 @@ nav li a{
     color: Dark 03;
 }
 
-.banner-img{
+.banner img{
     width: 100%;
     margin-top: 10px;
     
@@ -130,7 +130,7 @@ padding:30px ;
 }
 .facts-card-container .card-title{
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-top: 5px;
 }
 .facts-card-container .card-start{
@@ -141,9 +141,23 @@ padding:30px ;
 }
 
 
-.
 
+/* sponsor style */
+.sponsors{
+    text-align: center;
+}
 
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img{
+    width: 165px;
+}
 
 
 /* responsive for small device  */
@@ -152,23 +166,34 @@ padding:30px ;
     header{
         padding: 20px;
     }
-    nav, .teams-container{
-        flex-direction: column;
+    nav, .teams-container, 
+    .facts-card-container,
+    .sponsors-img-container{
+        flex-direction:column ;
     }
     .teams-img-container{
         grid-template-columns: 1fr;
     }
-    .teams-content{
+    .teams-content, .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
         
     }
+.facts-card-container{ 
+gap: 20px;
 
     
 }
+}
+
+
+
+
+
 /* responsive  web for  medium device  */
 @media screen and(min-width:576px) and(max-width:992px) {
-    nav, .teams-container{
+    nav, .teams-container,
+    .sponsors-img-container{
         flex-direction: column;
     }
     header{
